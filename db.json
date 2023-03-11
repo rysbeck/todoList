@@ -1,0 +1,22 @@
+{
+    "users":[
+        {
+            "name":"Bektur",
+            "password":"w123ewew",
+            "email":"bektur.bnb9@gmail.com",
+            "category":[
+                {
+                    "id":1,
+                    "categoryName":"Frontend",
+                    "task":[
+                        {
+                            "taskTitle":"Learn React",
+                            "id":123456789,
+                            "isComplete":false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
