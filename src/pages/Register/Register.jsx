@@ -1,12 +1,12 @@
-import React from 'react'
-import "./Login.scss"
+import React from 'react';
+import "./Register.scss"
 import Form from "../../components/Form"
 
 
 function Register() {
   return (
-    <div className='login'>
-      <Form/>
+    <div className='register'>
+        <Form />
     </div>
   )
 }

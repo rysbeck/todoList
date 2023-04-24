@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "bektur",
+      "email": "w123.@gmail.com",
+      "categories": [
+        {
+          "id": 11234,
+          "categoryName": "Front-End",
+          "task": [
+            {
+              "taskTitle": "Изучить реакт",
+              "id": 123456789,
+              "isComplete": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "email": "affa@gmail.com",
+      "password": "$2a$10$ASA/IpAibdYH9HaukgnCMOO84CdqLMwkXOKyDiOSvIjE3NDqC9w/i",
+      "login": "fsfaf",
+      "categories": [],
+      "id": 2
+    },
+    {
+      "email": "ajffa@gmail.com",
+      "password": "$2a$10$w.oSZrqu3KACPzUufdbt7ekcDmDwMRdyY0xwh.Go0Egs0SqG0icGW",
+      "login": "daaffa",
+      "categories": [],
+      "id": 3
+    }
+  ]
+}

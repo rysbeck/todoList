@@ -1,7 +1,8 @@
 import { Routes ,Route} from "react-router-dom";
 import Home from "./pages/Home"
-import Register from "./pages/Register"
-import Login from "../src/pages/Login/Login"
+import Login from "./pages/Login/Login"
+import Register from "./pages/Register/Register"
+import "./style.scss"
 
 function App() {
   return (
