@@ -3,10 +3,13 @@ import {Link, useNavigate, useLocation} from "react-router-dom";
 import {useForm} from "react-hook-form"
 import axios from 'axios';
 import "./Form.scss"
+import { useContext } from 'react';
+import { CustomContext } from '../pages/utils/Context';
 
 function Form() {
     const navigate = useNavigate();
     const location = useLocation();
+    const {setUSer} = useContext(CustomContext);
 
     const {
     register,
@@ -22,7 +25,15 @@ function Form() {
       {
       ...data,
       categories:[],})
-    .then(()=>{
+    .then((res)=>{
+      setUSer({
+        token:res.data.accessToken,
+        ...res.data.user
+      })
+      localStorage.setItem('user', JSON.stringify({
+        token:res.data.accessToken,
+        ...res.data.user
+      }))
       reset()
       navigate("/")
     })
@@ -35,7 +46,16 @@ function Form() {
       {
       ...data,
     })
-    .then(()=>{
+    .then((res)=>{
+      setUSer({
+        token:res.data.accessToken,
+        ...res.data.user
+      })
+      localStorage.setItem('user', 
+      JSON.stringify({
+        token:res.data.accessToken,
+        ...res.data.user
+      }))
       reset()
       navigate("/")
     })

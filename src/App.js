@@ -3,8 +3,17 @@ import Home from "./pages/Home"
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register"
 import "./style.scss"
+import { useEffect } from "react";
+import { useContext } from "react";
+import { CustomContext } from "./pages/utils/Context";
 
 function App() {
+  const {setUser} = useContext(CustomContext)
+  useEffect(()=>{
+    if(localStorage.getItem('user')!==null){
+      setUser(JSON.parse(localStorage.getItem('user')))
+    }
+  },[setUser]);
   return (
     <>
       <Routes>

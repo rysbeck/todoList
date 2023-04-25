@@ -31,6 +31,20 @@
       "login": "daaffa",
       "categories": [],
       "id": 3
+    },
+    {
+      "email": "rysbeck1@gmail.com",
+      "password": "$2a$10$kFuuBdJKCA4cTNYHfChgz.jqfuD94.i.FqVkG6xBmZXQN8Zstb5Zu",
+      "login": "Rysbek",
+      "categories": [],
+      "id": 4
+    },
+    {
+      "email": "mack@gmail.com",
+      "password": "$2a$10$WtH4N.gAwNYQJ80bVhIVfuiiMhStb1vuBu7pB.2How43ZseKO4iYO",
+      "login": "mack",
+      "categories": [],
+      "id": 5
     }
   ]
 }
